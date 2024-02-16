@@ -1,13 +1,15 @@
 :root {
-  --branding-color: #f2a602;
-  --secondary-color: #f9f7fe;
+  --branding-color: #beccbb;
+  --secondary-color: #f5f4f2;
+  --text-color: #3c3c3c;
+  --line-color: #bdb5b2;
   --heading-font-family: "Playfair Display", serif;
   --default-font-family: "Open Sans", sans-serif;
 }
 
 body {
   font-family: var(--default-font-family);
-  background-color: #f5f5f5;
+  background-color: var(--secondary-color);
 }
 
 h1,
@@ -16,12 +18,16 @@ h3,
 h4,
 h5,
 h6 {
-  color: #3c3c3c;
+  color: var(--text-color);
   font-family: var(--heading-font-family);
 }
 
 h1 {
   font-size: 68px;
+}
+
+a {
+  color: #627e60;
 }
 
 p {
@@ -50,13 +56,64 @@ p {
 .btn-branding {
   background: var(--branding-color);
   border-radius: 30px;
-  color: white;
+  color: #3b493c;
   font-size: 16px;
   line-height: 27px;
   padding: 10px 25px;
+  border: 1px solid var(--branding-color);
+}
+.btn-branding-prev {
+  background: var(--branding-color);
+  border-radius: 30px;
+  color: #3b493c;
+  font-size: 14px;
+  line-height: 18px;
+  padding: 10px 25px;
+  text-decoration: none;
+  border: 1px solid var(--branding-color);
 }
 
-.btn-branding:hover {
+.btn-branding:hover,
+.btn-branding-prev:hover {
   background: #f5f4f2;
+  color: var(--text-color);
+  text-decoration: none;
   border: 1px solid var(--branding-color);
+}
+
+.container {
+  margin: 50px auto;
+  width: 70%;
+}
+
+.divider {
+  border-top: 1px solid var(--line-color);
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    font-size: 16px;
+    margin: 0 30px;
+  }
+
+  .mobile-link {
+    display: block;
+    text-align: center;
+    margin: 0 30px;
+  }
 }
