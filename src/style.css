@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 :root {
   --branding-color: #beccbb;
   --secondary-color: #f5f4f2;
@@ -88,6 +93,26 @@ p {
 
 .divider {
   border-top: 1px solid var(--line-color);
+}
+
+.navbar {
+  border-bottom: 1px solid var(--line-color);
+  padding: 0px;
+}
+
+.navbar-brand {
+  font-family: var(--heading-font-family);
+  font-size: 30px;
+  color: var(--line-color);
+  padding: 0px;
+}
+
+.nav-item {
+  padding: 0 20px;
+}
+.active {
+  font-style: italic;
+  font-weight: 600;
 }
 
 @media (max-width: 576px) {
