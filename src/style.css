@@ -120,12 +120,8 @@ p {
   max-width: 65%;
 }
 
-.about img {
-  margin-left: 10px;
-}
-
 .about-content {
-  margin: 20px;
+  margin-top: 10px;
 }
 
 @media (max-width: 576px) {
