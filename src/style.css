@@ -127,6 +127,9 @@ p {
   background: var(--branding-color);
   padding: 0px;
 }
+.navbar-toggler {
+  font-size: 15px;
+}
 
 .navbar-brand {
   font-family: var(--heading-font-family);
