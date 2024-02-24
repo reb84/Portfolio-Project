@@ -40,6 +40,14 @@ p {
   font-weight: normal;
 }
 
+.footer {
+  font-size: 14px;
+  border-top: 1px solid var(--line-color);
+  padding: 20px 0px;
+  text-align: center;
+  width: 60%;
+  margin: 140px auto 0px auto;
+}
 .hero {
   background: var(--secondary-color);
   text-align: center;
